@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+	img{width:100%;display: block;}
+		.container{}
+		.row{margin:0 auto;padding:5px;}
+		/*.row.w1000{width: 1000px;}
+		.row:after{content:"";display: block;clear: both;}
+		.row div[class*="span"]{float:left;margin-left:2%;}
+		.row div[class*="span"]:first-child{margin-left:0;}
+		.span_6{width:49%;}
+		.span_4{width:32%;}
+		.span_3{width:23.5%;}*/
+		
+		@media screen and (min-width:769px){
+		.row.w1000{width: 1000px;}
+		.row:after{content:"";display: block;clear: both;}
+		.row div[class*="span"]{float:left;margin-left:2%;}
+		.row div[class*="span"]:first-child{margin-left:0;}
+		.span_6{width:49%;}
+		.span_4{width:32%;}
+		.span_3{width:23.5%;}
+		}
+		@media screen and (min-width:576px) and (max-width:768px){
+		.row.w1000{width:95%;}
+		.row:after{content:"";display: block;clear: both;}
+		.row div[class*="span"]{float:left;margin-left:2%;margin-bottom:10px;}
+		.row div[class*="span"]:first-child,
+		.row div[class*="span"]:nth-child(3){margin-left:0;}
+		.span_6,
+		.span_4,
+		.span_3{width:49%;}
+		.md_vnone{display:none;}
+		}
+		@media screen and (max-width:575px){
+			.row{padding:10px;}
+			.row div{margin-bottom:10px;}
+			.mo_vnone{display:none;}
+		}
