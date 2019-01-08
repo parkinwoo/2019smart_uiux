@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>tabmenu</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.container{width: 500px; margin: 50px auto;}
+		ul.tab{}
+		ul.tab:after{content:""; display: block; clear: both;}
+		ul.tab li{float: left; height: 40px; background-color: #e9eff8; width: 100px; border-radius:10px 10px 0 0px;}
+		ul.tab li.selected{background-color: #c1d2f2;}
+		ul.tab li a{display: block; line-height: 40px; text-align: center;}
+		.container div{border: 1px solid #9fb7d4; border-top:none; padding: 10px;}
+	</style>
+  <script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("ul.tab > li").eq(0).addClass("selected");
+			$(".container > div").hide();
+			$(".container > div").eq(0).show();
+			$("ul.tab li").click(function(){
+				var t = $(this);
+				var $i = $(this).index();
+
+				$("ul.tab li").removeClass();
+				$(this).addClass("selected");
+				$(".container div").hide();
+				$(".container div").eq($(this).index()).show();
+				console.log($(this).index());
+			});
+		});
+	</script>
+	</head>
+ <body>
+	<div class="container">
+		<ul class="tab"> 
+			<li class="selected"><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+		<div>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates?</div>
+		<div>2.Quaerat, cumque consectetur consequatur nobis nulla sed alias porro!</div>
+		<div>3.Eum, ut, officia iusto at nemo repellat a qui.</div>
+		<div>4.Similique nisi commodi placeat repudiandae quia! Officia, quibusdam earum?</div>
+		<div>5.Veniam, saepe, reprehenderit mollitia dolores voluptatum rerum provident sed.</div>
+	</div>
+ </body>
+</html>
+
