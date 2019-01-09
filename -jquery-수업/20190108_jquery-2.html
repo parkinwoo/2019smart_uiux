@@ -27,18 +27,18 @@
 		$(document).ready(function(){
 			var currentIndex = 0;
 			var $menuitem = $("#tabMenu1 li");
-			
 			var timerId = setInterval(function(){
-				var $item = $menuitem.eq(currentIndex);
-				$item.addClass("select");
-
+				$menuitem.eq(currentIndex).addClass("select");
 				currentIndex++;
-				if(currentIndex >= $menuitem.length){
-					clearInterval(timerId);
-				};
+				if(currentIndex >= 7){ //menuitem.length = 6
+					//clearInterval(timerId);
+					$menuitem.removeClass("select");
+					currentIndex = 0
+				} 
 				console.log("currentIndex = " + currentIndex);
 			},1000);
 		});
+
 	</script>
 	</head>
  <body>
