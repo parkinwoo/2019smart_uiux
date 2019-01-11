@@ -30,15 +30,14 @@
 			var timerId = setInterval(function(){
 				$menuitem.eq(currentIndex).addClass("select");
 				currentIndex++;
-				if(currentIndex >= 7){ //menuitem.length = 6
+				if (currentIndex >= 7){
 					//clearInterval(timerId);
 					$menuitem.removeClass("select");
-					currentIndex = 0
-				} 
+					currentIndex = 0;
+				};
 				console.log("currentIndex = " + currentIndex);
 			},1000);
 		});
-
 	</script>
 	</head>
  <body>
