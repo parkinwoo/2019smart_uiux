@@ -23,27 +23,26 @@
 		.tab-menu li.select{background-position-y: -80px; height: 80px;}
 	</style>
 	<script src="../js/jquery-3.3.1.min.js"></script>
-  <script>
+	<script>
 		$(document).ready(function(){
 			var currentIndex = 0;
 			var $menuitem = $("#tabMenu1 li");
 			var timerId = setInterval(function(){
 				$menuitem.eq(currentIndex).addClass("select");
 				currentIndex++;
-				if(currentIndex >= 7){ //menuitem.length = 6
+				if (currentIndex >= 7){
 					//clearInterval(timerId);
 					$menuitem.removeClass("select");
-					currentIndex = 0
-				} 
+					currentIndex = 0;
+				};
 				console.log("currentIndex = " + currentIndex);
 			},1000);
 		});
-
 	</script>
 	</head>
  <body>
 	<ul class="tab-menu" id="tabMenu1">
-		<li class="menuitem1 select">google</li>
+		<li class="menuitem1">google</li>
 		<li class="menuitem2">facebook</li>
 		<li class="menuitem3">pinterset</li>
 		<li class="menuitem4">twitter</li>
