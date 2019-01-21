@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>bootstrap</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<script src="../js/bootstrap.min.js"></script>
+  </head>
+	<style>
+		.wrap{background-color: orange;}
+		.container{margin-bottom: 100px;}
+	</style>
+ <body>
+	<div class="wrap">
+		<!-- container / row / .col sm/md/lg/xl -->
+		<div class="container">
+			<div class="row d-none">
+				<div class="col-sm-4 col-md-3 box bg-primary">1</div>
+				<div class="col-sm-4 col-md-3 box bg-success">2</div>
+				<div class="col-sm-4 col-md-3 box bg-info">3</div>
+				<div class="d-sm-none d-md-block col-md-3 box bg-danger">4</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-3 bg-primary">1</div>
+				<div class="d-none d-md-block col-lg-4 col-md-3 bg-success">2</div>
+				<div class="d-lg-none col-md-3 bg-info">3</div>
+				<div class="col-lg-4 col-md-3 bg-danger">4</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="btn btn-primary active">button</button>
+	<button type="button" class="btn btn-primary btn-sm">button</button>
+	<button type="button" class="btn btn-secondary">button</button>
+	<button type="button" class="btn btn-success">button</button>
+	<button type="button" class="btn btn-info">button</button>
+	<button type="button" class="btn btn-link">button</button>
+	<a href="#" class="btn btn-info btn-sm active">안녕하세요</a>
+	<div class="btn btn-secondary btn-sm">BUTTON</div>
+
+	<div class="btn-group">
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">button</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">따라할껀데</a>
+				<a href="#" class="dropdown-item">내맘이야</a>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary active dropdown-toggle" data-toggle="dropdown">button</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">죠니</a>
+				<a href="#" class="dropdown-item">껌딱지</a>
+			</div>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">button</button>
+			<div class="dropdown-menu">
+				<a href="#" class="dropdown-item">박인우</a>
+				<a href="#" class="dropdown-item">어쩌라고</a>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
+
