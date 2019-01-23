@@ -17,6 +17,38 @@
 	</style>
   </head>
  <body>
+ <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
+	<a href="#" class="navbar-brand">LOGO</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#menuNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="menuNavbar">
+		<ul class="navbar-nav ml-auto text-center">
+			<li class="nav-item">
+				<a href="#" class="nav-link">link1</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">link2</a>
+			</li>
+			<li class="nav-item drop-down">
+				<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">link3</a>
+				<div class="dropdown-menu ">
+					<a href="#" class="dropdown-item">sublink1</a>
+					<a href="#" class="dropdown-item">sublink2</a>
+					<a href="#" class="dropdown-item">sublink3</a>
+				</div>
+			</li>
+			<li class="nav-item drop-down">
+				<a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">link4</a>
+				<div class="dropdown-menu ">
+					<a href="#" class="dropdown-item">sublink1</a>
+					<a href="#" class="dropdown-item">sublink2</a>
+					<a href="#" class="dropdown-item">sublink3</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+ </nav>
 	<div class="container"> <!-- flud 넣을 경우 width100%됨 -->
 		<div class="row">
 			<div class="col-md-4 bg-primary text-center">1</div>
@@ -148,6 +180,64 @@
 	<div class="container">
 		<button data-toggle="collapse" data-target="#demo1" class="btn btn-primary">아코디언메뉴</button>
 		<div id="demo1" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, doloremque mollitia itaque magnam quas quae neque. Assumenda, impedit illo dicta.</div>
+	</div>
+	<div class="container">
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+					<a href="#collapseOne" class="card-link" data-toggle="collapse">Lorem ipsum.
+					</a>
+			</div>
+				
+				<div id="collapseOne" class="collapse show" data-parent="#accordion">
+					<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores rem expedita beatae magnam numquam. Natus, qui eos earum perferendis odio.</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<a href="#collapseTwo" class="card-link" data-toggle="collapse">Lorem ipsum.
+					</a>
+			</div>
+				
+				<div id="collapseTwo" class="collapse" data-parent="#accordion">
+					<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores rem expedita beatae magnam numquam. Natus, qui eos earum perferendis odio.</div>
+				</div>
+			</div>
+		</div>
+			<div class="card">
+				<div class="card-header">
+					<a href="#collapseThree" class="card-link" data-toggle="collapse">Lorem ipsum.
+					</a>
+			</div>
+
+				<div id="collapseThree" class="collapse" data-parent="#accordion">
+					<div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores rem expedita beatae magnam numquam. Natus, qui eos earum perferendis odio.</div>
+				</div>
+			</div>
+	</div>
+	<div class="container">
+		<div id="accordion1">
+			<ul class="list-group">
+				<li class="list-group-item">
+					<a href="#item1" data-toggle="collapse">Lorem ipsum.</a>
+					<div id="item1" class="collapse" data-parrent="#accordion1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, aspernatur, officiis, iusto praesentium tempore molestias amet porro quisquam magnam pariatur eos cupiditate consequuntur sint quasi necessitatibus autem animi eaque in.
+					</div>
+				</li>
+				<li class="list-group-item">
+					<a href="#item2" data-toggle="collapse">Lorem ipsum.</a>
+					<div id="item2" class="collapse" data-parrent="#accordion1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, aspernatur, officiis, iusto praesentium tempore molestias amet porro quisquam magnam pariatur eos cupiditate consequuntur sint quasi necessitatibus autem animi eaque in.
+					</div>
+				</li>
+				<li class="list-group-item">
+					<a href="#item3" data-toggle="collapse">Lorem ipsum.</a> 
+					<div id="item3" class="collapse" data-parrent="#accordion1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, aspernatur, officiis, iusto praesentium tempore molestias amet porro quisquam magnam pariatur eos cupiditate consequuntur sint quasi necessitatibus autem animi eaque in.
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
  </body>
 </html>
