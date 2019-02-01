@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>Document</title>
+	<link rel="stylesheet" href="../css/reset.css">
+  <style>
+		.sky{background: url(../images/bg1.png) 50% 0; width: 100%; height: 1000px; position: relative;}
+		.sky article{position: absolute; top: 150px; left: 40%;}
+	</style>
+	</head>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$('section[data-type="background"]').each(function(){
+				var bg = $(this);
+				$(window).scroll(function(){
+					var yPos = -($(window).scrollTop() / bg.data("speed"));
+					var yPos2 = ($(window).scrollTop() * 1.2);
+					console.log("scroll:"+$(window).scrollTop()+" / bg:"+yPos);
+					var coords = '50%' + yPos + 'px';
+					var coords2 = yPos2 + 'px';
+					bg.css({backgroundPosition:coords});
+					$("article").css({top:coords2});
+				});
+			});
+		});
+	</script>
+ <body>
+	<section class="sky" data-type="background" data-speed=".5">
+		<article><img src="../images/balloon.png" alt=""></article>
+	</section>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, enim deserunt eligendi nostrum delectus alias consequatur quis dolores animi doloremque repudiandae totam. Laborum, rerum minus voluptatibus laboriosam libero aspernatur vel? Quae, vitae, cumque, dolores, architecto dignissimos officia quo omnis repellat fugiat magnam provident aliquid animi necessitatibus ipsam illum sunt itaque saepe a impedit maiores. Voluptas, non, numquam quibusdam dolorem dicta corporis facere natus fugit quo eius hic enim explicabo voluptates aspernatur dignissimos. Consectetur, repellendus, facilis, consequuntur vel alias dolores corporis ad laudantium impedit reprehenderit provident sapiente quo libero nesciunt perferendis expedita eveniet asperiores odio quis reiciendis animi distinctio numquam voluptas modi hic nostrum quas magnam est laborum et adipisci porro omnis ratione! Velit, quaerat, illo a culpa dolores reprehenderit exercitationem nisi molestiae ex necessitatibus earum fugit. Suscipit, ratione, ipsam, magni sint eos quia quae tempore animi veniam at omnis ipsum vero porro. Qui, esse, a incidunt sint iure ullam ratione ipsum sapiente dolore perferendis eius labore ducimus animi fugit possimus. Ut, ipsam, necessitatibus, provident, repellat enim sunt dolorem similique atque ex ea quo consectetur soluta. Quia autem modi earum culpa enim ab voluptatum suscipit nesciunt vero impedit! Minima, qui, magnam magni quam quidem facilis voluptates rem sed illum a laboriosam.
+
+	<section class="sky" data-type="background" data-speed=".5">
+		<article><img src="../images/balloon.png" alt=""></article>
+	</section>
+ </body>
+</html>
+

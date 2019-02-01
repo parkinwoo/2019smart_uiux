@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>title</title>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" href="../css/animate.css">
+	 <link rel="stylesheet" href="../css/reset.css">
+   <script src="../js/jquery-3.3.1.min.js"></script>
+   <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+   <script src="../js/bootstrap.min.js"></script>
+	 <style>
+		img{max-width: 100%;}
+		.header{color: white; padding-top: 30px; padding-bottom: 50px;}
+		.header h1{padding-top: 90px;}
+		.navbar-dark .navbar-nav .nav-link{color: black;}
+		.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus{color: black;}
+		a#navbardrop:after{content:none}
+		.carousel {margin-top: 60px}
+		.bg-gray{background: #f5f5f5;}
+		.container > .row1{height: 150px; color: black; text-align: center; border: 1px solid #aaa;}
+		.container > .row > .content1{border-right: 1px solid #aaa;}
+		.container > .row > .content1:last-child{border-right: none;}
+		.container > .row > .content1 > a{display: block; padding-top: 105px;}
+		.container > .row > .box1{background: url(../images/pizza.png) center 20px no-repeat;}
+		.container > .row > .box2{background: url(../images/confetti.png) center 20px no-repeat;}
+		.container > .row > .box3{background: url(../images/gift.png) center 20px no-repeat;}
+		.container > .row > .box4{background: url(../images/chef-hat.png) center 20px no-repeat;}
+		.container > .row > .box5{background: url(../images/pizza-2.png) center 20px no-repeat;}
+		.container > .row > .box6{background: url(../images/contract.png) center 20px no-repeat;}
+		.container .row2 .centent2{margin-bottom: 30px;}
+		.container .row3{height:150px; background: url(../images/new-side-bg.png) 0 0 no-repeat; background-size: cover;}
+		.col-sm-6.col-md-3.col-lg-3.box.content3{line-height: 150px; text-align: center;}
+		.col-sm-6.col-md-3.col-lg-3.box.content3 img{margin-left: 15px;}
+		.footer{background: #0d121b; text-align: center; padding: 30px 50px 100px 50px; color: #555d6d;}
+	 </style>
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar navbar-expand-sm bg-white navbar-dark fixed-top pl-5 pr-5">
+				<a class="navbar-brand" href="#"><img src="../images/main_logo.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="tmenu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">피자</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">프리미엄 피자</a>
+								<a class="dropdown-item" href="#">더맛있는 피자</a>
+								<a class="dropdown-item" href="#">팬피자</a>
+								<a class="dropdown-item" href="#">마블세트</a>
+								<a class="dropdown-item" href="#">사전예약세트</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">더블박스</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">더블박스</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">사이드&amp;음료</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">음료/소스/피클</a>
+								<a class="dropdown-item" href="#">할인 사이드</a>
+								<a class="dropdown-item" href="#">사이드박스</a>
+								<a class="dropdown-item" href="#">사이드</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">이벤트&amp;할인</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="#">이벤트</a>
+								<a class="dropdown-item" href="#">할인/상품권</a>
+							</div>
+						</li>
+					</ul>
+			</div>
+		</nav>
+	<div class="container-flud p-0 m-0">
+		<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+			<li data-target="#demo" data-slide-to="0" class="active"></li>
+			<li data-target="#demo" data-slide-to="1"></li>
+			<li data-target="#demo" data-slide-to="2"></li>
+			<li data-target="#demo" data-slide-to="3"></li>
+		</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="../images/pizza-1.png" alt="img01">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/pizza-2.jpg" alt="img02">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/pizza-3.png" alt="img04">
+				</div>
+				<div class="carousel-item">
+					<img src="../images/pizza-4.jpg" alt="img05">
+				</div>
+			</div>
+			<a href="#demo" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#demo" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+	</div>
+	<div class="container pr-0 pl-0">
+		<div class="row row1">
+			<div class="col-4 col-sm-4 col-md-3 col-lg-2 bg-white box1 content1"><a href="#">주문하기</a></div>
+			<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box2 content1"><a href="#">특가&amp;이벤트</a></div>
+			<div class="col-4 d-sm-block col-sm-4 col-md-3 col-lg-2 bg-white box3 content1"><a href="#">선물하기</a></div>
+			<div class="d-none d-sm-none d-md-block col-md-3 col-lg-2 bg-white box4 content1"><a href="#">내맘대로피자</a></div>
+			<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box5 content1"><a href="#">단체주문</a></div>
+			<div class="d-none d-sm-none d-md-none d-lg-block col-lg-2 bg-white box6 content1"><a href="#">매장직원채용</a></div>
+		</div>
+	</div>
+	<div class="pt-5"> 
+		<div class="container">
+			<div class="row row2">
+				<div class="col-md-6 centent2">
+					<a href="#"><img src="../images/new-side-1.png" alt=""></a>
+				</div>
+				<div class="col-md-6 centent2">
+					<a href="#"><img src="../images/new-side-2.png" alt=""></a>
+				</div>
+				<div class="col-6 col-md-4 centent2">
+					<a href="#"><img src="../images/new-side-3.png" alt=""></a>
+				</div>
+				<div class="col-6 col-md-4 centent2">
+					<a href="#"><img src="../images/new-side-4.png" alt=""></a>
+				</div>
+				<div class="d-sm-none d-md-block col-md-4 centent2">
+					<a href="#"><img src="../images/new-side-5.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container pl-0 pr-0 pt-3">
+		<div class="row row3">
+			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">고객만족센터<img src="../images/new-side-icon1.png" alt=""></a></div>
+			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">매장안내<img src="../images/new-side-icon2.png" alt=""></a></div>
+			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">상품권 안내<img src="../images/new-side-icon3.png" alt=""></a></div>
+			<div class="col-sm-6 col-md-3 col-lg-3 box content3"><a href="#">피자헛 원칙<img src="../images/new-side-icon4.png" alt=""></a></div>
+		</div>
+	</div>
+	<footer class="footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, ipsum deleniti magni enim ea consequuntur distinctio nemo deserunt aliquam.
+	</footer>
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Modal title</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+</html>
